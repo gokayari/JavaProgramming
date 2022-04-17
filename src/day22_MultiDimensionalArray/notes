@@ -1,0 +1,13 @@
+Arrays: utility class for array. in "java.util" package
+
+		toString()
+		deepToString()
+		sort()
+		equals()
+		copyOf()
+		copyOfRange()
+
+
+String methods:
+	toCharArray()
+	split()

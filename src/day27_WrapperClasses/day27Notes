@@ -1,0 +1,15 @@
+Data Structures:
+
+	1. Array: supports primitives & non primitives
+	2. Collection: ONLY support non-primitives
+	3. Map: ONLY support non-primitives
+
+
+
+
+
+Wrapper classes:
+
+		1. parse methods: converts String to primitive
+
+		2. valueOf methods: converts String to wrapper class

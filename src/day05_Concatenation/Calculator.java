@@ -1,0 +1,26 @@
+package day05_Concatenation;
+
+public class Calculator {
+
+    public static void main(String[] args) {
+
+        int firstNumber = 100;
+        int secondNumber = 50;
+
+        int addition = firstNumber + secondNumber;
+        int subtraction = firstNumber - secondNumber;
+        int multiplication = firstNumber * secondNumber;
+
+        // 100 + 50 = 100
+        System.out.println(firstNumber + " + " + secondNumber + " = " + (firstNumber + secondNumber));
+        System.out.println(firstNumber + " + " + secondNumber + " = " + addition); // better than first one
+
+        // 100 - 50 = 50
+        System.out.println(firstNumber + " - " + secondNumber + " = " + (firstNumber - secondNumber));
+        System.out.println(firstNumber + " - " + secondNumber + " = " + subtraction); //better than first one
+
+        // 100 * 50 = 5000
+        System.out.println(firstNumber + " * " + secondNumber + " = " + (firstNumber * secondNumber));
+        System.out.println(firstNumber + " * " + secondNumber + " = " + multiplication); // better than first one
+    }
+}

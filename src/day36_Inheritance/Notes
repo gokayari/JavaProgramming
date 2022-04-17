@@ -1,0 +1,35 @@
+Inheritance Topic:
+		Is A relation
+		extends keyword
+
+		super keyword & constructor
+		Types of Inheritance
+
+		Is A relation vs Has A relation
+		Method Overriding
+
+------------------------------------
+Task :
+
+    Animal:
+        name, breed, gender, size, age, color
+        eat(), drink(), move(), sleep(), toString(),
+
+    Dog extends Animal:
+            bark()
+    Cat extends Animal:
+            scratch()
+    Tiger extends Animal:
+            roar()
+    Fish extends Animal:
+            swim()
+    ...
+------------------------------------
+
+        import vs extends:
+    		import: borrowing
+    		extends: owning
+
+
+    	inherit ->pass it through
+    	import -> let using
