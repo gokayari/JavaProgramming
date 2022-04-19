@@ -1,5 +1,8 @@
 package day41_Exceptions;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 public class TryCatchBlocks {
 
     public static void main(String[] args) {
@@ -49,16 +52,36 @@ public class TryCatchBlocks {
         try {
             System.out.println("Cydeo".substring(2,0)); //IndexOutOfBoundsException
         }catch (RuntimeException e){      //it is parent class of IndexOutOfBoundsException, that's why better
+
             e.printStackTrace();
+//            System.out.println(e.getMessage());
+
         }
 
         System.out.println("Test 3 completed");
 
 
 
+        System.out.println("-----------------------");
+
+        System.out.println("Hello");
+
+        try{
+            Thread.sleep(3000);     //InterruptedException  //it is NOT RunTimeException!
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+
+        System.out.println("Cydeo");
 
 
+        System.out.println("-------------------------");
 
+        try {
+            FileInputStream file = new FileInputStream("File Path");    //FileNotFoundException, isn't RunTime!
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
 
     }
