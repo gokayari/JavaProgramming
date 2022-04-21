@@ -9,7 +9,7 @@ public class MorningWorkOut {
         for (int i = 1; i <= 30; i++) {
             System.out.print("\rPush up " + i);
             sleep(1.5);
-                //we want to use this (custom) sleep method instead of "Thread.sleep"
+                //we prefer to use this (custom) sleep method instead of "Thread.sleep"
            /*
             try {
                 Thread.sleep(1500);
@@ -27,7 +27,7 @@ public class MorningWorkOut {
         for (int i = 1; i <= 20; i++) {
             System.out.print("\rPull up " + i);
             sleep(2.5);
-                //we want to use this (custom) sleep method instead of "Thread.sleep"
+                //we prefer to use this (custom) sleep method instead of "Thread.sleep"
             /*
             try {
                 Thread.sleep(2500);
