@@ -2,7 +2,7 @@ package day43_Abstraction.car;
 
 public final class Audi extends Car{    //final class for autoPark
 
-    public Audi(String brand, String model, String color, int year, double price) {
+    public Audi(String model, String color, int year, double price) {
         super("Audi", model, color, year, price);
     }
 
