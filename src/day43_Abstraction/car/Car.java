@@ -63,4 +63,16 @@ public abstract class Car {
     // public static abstract void start();      //CANNOT be! overridden
 
     // private abstract void start();           //CANNOT be! overridden
+
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", year=" + year +
+                ", price=" + price +
+                '}';
+    }
 }
