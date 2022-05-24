@@ -50,5 +50,17 @@ public class MapPractice1 {
         System.out.println(employeeMap);
 
         System.out.println("-------------------------");
+
+        //  2. Display the names of all female employees
+
+        for (Map.Entry<String, String> eachPair : employeeMap.entrySet()) {
+            String eachKey = eachPair.getKey();
+            String eachValue = eachPair.getValue();
+
+            if(eachValue.equals("Female")){
+                System.out.println(eachKey);
+            }
+
+        }
     }
 }
