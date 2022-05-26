@@ -40,5 +40,16 @@ public class Test {
 
         printCube.apply(3);     //27
 
+        //function4: create a function that can check if a number is evenly divisible by 3 & 5
+
+        MyFirstFunctionalInterface divisibleBy3And5 = n -> {
+          if (n % 15 == 0){
+              System.out.println(n + " is divisible by 3 and 5");
+          }else{
+              System.out.println(n + " is NOT divisible by 3 and 5");
+          }
+        };
+
+        divisibleBy3And5.apply(18);
     }
 }
