@@ -31,5 +31,14 @@ public class Test {
 
 
         //function3: create a function that can display the cube of number
+
+        MyFirstFunctionalInterface printCube;
+
+        printCube = (n) -> {
+            System.out.println(n*n*n);
+        };
+
+        printCube.apply(3);     //27
+
     }
 }
