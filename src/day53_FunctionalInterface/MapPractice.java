@@ -59,7 +59,17 @@ public class MapPractice {
         }
 
 
+        System.out.println("==================");
+
         //2. Display the names of the java topics that we spend more than 7 hours
+
+        for (Map<String,Double> eachUnit : allUnits){
+            for (Map.Entry<String, Double> entry : eachUnit.entrySet()){
+                if (entry.getValue()>= 7){
+                    System.out.println(entry.getKey());
+                }
+            }
+        }
         //3. Display the names of the java topics that we spend less than 3 hours
         //4. Which Java Topic has the maximum hours?
         //5. Which topic has the minimum hours?
