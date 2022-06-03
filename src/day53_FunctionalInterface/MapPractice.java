@@ -87,5 +87,31 @@ public class MapPractice {
         //4. Which Java Topic has the maximum hours?
         //5. Which topic has the minimum hours?
 
+        double max = Double.MIN_VALUE;
+        double min = Double.MAX_VALUE;
+
+        String nameMax ="";
+        String nameMin ="";
+
+        for (Map<String, Double> eachUnit : allUnits){
+            for (Map.Entry<String, Double> entry : eachUnit.entrySet()){
+                if (entry.getValue() > max){
+                    max = entry.getValue();
+                    nameMax = entry.getKey();
+                }
+
+                if (entry.getValue() < min){
+                    min = entry.getValue();
+                    nameMin = entry.getKey();
+                }
+            }
+        }
+
+        System.out.println("nameMax = " + nameMax);
+        System.out.println("max = " + max);
+
+        System.out.println("nameMin = " + nameMin);
+        System.out.println("min = " + min);
+
     }
 }
