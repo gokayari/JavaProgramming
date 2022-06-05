@@ -13,5 +13,13 @@ public class LambdaExpressions {
         String result = stringReverse.method("Wooden Spoon");
 
         System.out.println(result);
+
+        MyThirdFunctionalInterface<Integer> cube = (n) -> {
+            int cubeVolume = n*n*n;
+            return cubeVolume;
+        };
+
+        System.out.println(cube.method(3));
+
     }
 }
