@@ -116,6 +116,73 @@ public class BuildInFunctionalInterfaces1 {
 
         System.out.println(Arrays.toString(result2));
 
+        System.out.println("---------------------------");
+
+        //tasks, my solutions:
+        // create a function that can return the maximum number from an int array
+
+        Function <int[], Integer> maxNumber = a -> {
+
+            int maxNum = Integer.MIN_VALUE;
+            for (int i = 0; i < a.length; i++) {
+                if (a[i] > maxNum){
+                    maxNum = a[i];
+                }
+            }
+            return maxNum;
+        };
+
+        int[] arr1 = {1,2,3,4,55,66,77,8};
+        Integer max = maxNumber.apply(arr1);
+        System.out.println(max);
+
+        // create a function that can swap the first and last elements of an array
+
+        Function<String[],String[]> swapElements = a -> {
+            String [] result = new String[a.length];
+            String temp ="";
+            int n = 0;
+            for (int i = 0; i < a.length; i++) {
+                if (i == 0){
+                    result[a.length-1] = a[i];
+                    n++;
+                    continue;
+                }
+                if (i == a.length-1){
+                    result[0] = a[a.length-1];
+                    n++;
+                    continue;
+                }
+                result [n] = a[i];
+                n++;
+            }
+            return result;
+        };
+
+        String[] arr2 = {"Java", "Python", "C++", "C#"};
+
+        arr2 = swapElements.apply(arr2);
+        System.out.println(Arrays.toString(arr2));
+
+        // Create a function that can reverse an array and returns it
+
+        Function<String[],String[]> reverseArray = a -> {
+
+            String[] result = new String[a.length];
+            for (int i = 0, y= a.length-1; i < a.length; i++, y--) {
+                result[i] = a[y];
+            }
+            return result;
+        };
+        arr2 = reverseArray.apply(arr2);
+        System.out.println(Arrays.toString(arr2));
+
+
+        // create a function that can reverse a List
+
+
+
+
 
     }
 }
