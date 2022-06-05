@@ -6,7 +6,7 @@ public class Test2 {
 
         MySecondFunctionalInterface<String> printEach;
 
-        printEach = s -> {          //we can not use () parentheses
+        printEach = s -> {          //we can also put without () parentheses
             for (String each : s.split("")) {
                 System.out.println(each);
             }
