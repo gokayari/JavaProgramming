@@ -1,6 +1,9 @@
 package day53_FunctionalInterface;
 
 import java.util.Arrays;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.function.BiConsumer;
 import java.util.function.BiPredicate;
 
 public class BuildInFunctionalInterfaces2 {
@@ -28,7 +31,7 @@ public class BuildInFunctionalInterfaces2 {
         System.out.println(r1);
 
 
-        System.out.println("---------------------------------");
+        System.out.println("-------------------------------");
 
         //create a function that can check if two strings are anagram
 
@@ -40,5 +43,36 @@ public class BuildInFunctionalInterfaces2 {
             Arrays.sort(arr2);
             return Arrays.equals(arr1, arr2);
         };
+
+
+        System.out.println("----------------------------");
+
+        //BiConsumer:
+
+        // create a function that can print the given string for given number of times
+        BiConsumer<String, Integer> printMultipleTimes = (s, n) -> {
+            for (int i = 0; i < n; i++) {
+                System.out.println(s);
+            }
+        };
+
+        printMultipleTimes.accept("Java", 5);
+
+        System.out.println("-----------------------------");
+
+        // create a function that takes first and last names and returns the formatted full name
+        // "jAvA", "PROGRAMMING" ===> "Java Programming"
+
+        Map<String, String> scrumTeam1 = new LinkedHashMap<>();
+        scrumTeam1.put("Abdulhamid","SM");
+        scrumTeam1.put("Nikita","Developer");
+        scrumTeam1.put("Alina","Developer");
+        scrumTeam1.put("Mert","PO");
+        scrumTeam1.put("Lee","SDET");
+
+        scrumTeam1.forEach( (k, v) -> {         //*much easier than creating loops
+            System.out.println(k + " : " + v);
+        } );
+
     }
 }
